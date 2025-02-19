@@ -85,7 +85,7 @@ export default class PicGoCoreUploader implements Uploader {
     if (this.settings.picgoCorePath) {
       command = `${this.settings.picgoCorePath} upload`;
     } else {
-      command = `picgo upload`;
+      command = `npx picgo upload`;
     }
     const res = await this.exec(command);
 
